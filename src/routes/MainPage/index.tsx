@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import {
   TripleImage,
@@ -12,19 +12,30 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 1200px;
-  margin: 0 auto;
+
   > div {
     flex: 1;
+  }
+`
+const appear = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 `
 
 const LogoBox = styled.div`
   position: relative;
   text-align: center;
-
+  animation-name: ${appear};
+  animation-duration: 700ms;
   img {
     width: 400px;
-    height: 340px;
+    height: auto;
   }
   p {
     position: absolute;
@@ -39,6 +50,8 @@ const StatisticBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  animation-name: ${appear};
+  animation-duration: 700ms;
 `
 
 const IndicatorsList = styled.ul`
@@ -58,9 +71,9 @@ const MainPage = () => {
       </LogoBox>
       <StatisticBox>
         <IndicatorsList>
-          <Indicator number={700} unit="만 명" desc="의 여행자" />
-          <Indicator number={100} unit="만 개" desc="의 여행 리뷰" />
-          <Indicator number={470} unit="만 개" desc="의 여행 일정" />
+          <Indicator number={350} unit="만 명" desc="의 여행자" />
+          <Indicator number={21} unit="만 개" desc="의 여행 리뷰" />
+          <Indicator number={650} unit="만 개" desc="의 여행 일정" />
         </IndicatorsList>
         <AwardsList>
           <Award

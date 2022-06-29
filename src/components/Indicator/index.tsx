@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import useCounter from '../../hooks/useCounter'
+
 const IndicatorItem = styled.li`
   font-size: 36px;
   line-height: 1.6;
@@ -15,7 +17,7 @@ interface Props {
 }
 
 function Indicator({ number, unit, desc }: Props) {
-  const count = number
+  const count = useCounter(number, 2000, 150)
 
   return (
     <IndicatorItem>
