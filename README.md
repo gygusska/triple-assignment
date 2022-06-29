@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 트리플 프론트엔드 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align='center'>
 
-## Available Scripts
+![Kapture 2022-06-30 at 03 59 05](https://user-images.githubusercontent.com/28261736/176517362-02920a82-0bbe-4add-992e-24811bd1f31d.gif)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## 기술 스택
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> React, TypeScript, Styled Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 선정 이유
 
-### `npm test`
+* React
+  * 기본요구사항
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* TypeScript
+  * 더 나은 개발 경험과 코드 퀄리티 향상
+  * 타입 추론으로 에러를 방지
 
-### `npm run build`
+* Styled Components
+  * 컴포넌트 단위 스타일을 하기 위해 사용
+  * 자유로운 CSS 커스텀 컴포넌트를 만들 수 있어서 사용
+  * 자사 스택
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 프로젝트 실행 방법
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. 레포지토리 클론
 
-### `npm run eject`
+```
+git clone https://github.com/gygusska/triple-assignment.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. dependencies 설치
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. 실행
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm run start
+```
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Review
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+기존에 scss를 사용하고 있어 익숙하지는 않았지만 Styled Components를 처음 사용해보았다
+파일 이동없이 한곳에서 작업해서 편했다<br>
+requestAnimationFrame를 사용해서 깔끔한 애니메이션을 구현했다
