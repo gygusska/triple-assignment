@@ -50,6 +50,6 @@ npm run start
 
 ## Review
 
-기존에 scss를 사용하고 있어 익숙하지는 않았지만 Styled Components를 처음 사용해보았다
+기존에 scss를 사용하고 있어 익숙하지는 않았지만 Styled Components를 처음 사용해보았다<br>
 파일 이동없이 한곳에서 작업해서 편했다<br>
 requestAnimationFrame를 사용해서 깔끔한 애니메이션을 구현했다
